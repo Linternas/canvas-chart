@@ -1,0 +1,94 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(247, 245, 224);
+}
+
+/* 기본 스타일 (데스크탑 사이즈 960px) */
+#app {
+  width: 960px;
+  min-width: 360px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 태블릿 스타일 (768px 이하) */
+@media (max-width: 768px) {
+  #app {
+    width: 90%;
+    box-shadow: none;
+  }
+}
+
+/* 모바일 스타일 (480px 이하) */
+@media (max-width: 480px) {
+  #app {
+    width: 100%;
+    box-shadow: none;
+  }
+}
+
+#survey-container {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-survey-header {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.survey-block {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.survey-block > .survey-divider {
+  margin: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.survey-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.survey-form > label {
+  cursor: pointer;
+}
+
+.btn-survey-submit {
+  cursor: pointer;
+}
+
+.survey-done-content {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-top: 4px solid rgb(189 183 122);
+  height: 140px;
+}
+
+.survey-done-content > h2 {
+  padding-bottom: 16px;
+  font-size: 22pt;
+}
+
+.survey-done-content > p {
+  font-size: 14pt;
+}

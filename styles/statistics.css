@@ -1,0 +1,54 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(247, 245, 224);
+}
+
+/* 기본 스타일 (데스크탑 사이즈 960px) */
+#app {
+  width: 960px;
+  min-width: 360px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 태블릿 스타일 (768px 이하) */
+@media (max-width: 768px) {
+  #app {
+    width: 90%;
+    box-shadow: none;
+  }
+}
+
+/* 모바일 스타일 (480px 이하) */
+@media (max-width: 480px) {
+  #app {
+    width: 100%;
+    box-shadow: none;
+  }
+}
+
+.survey-statistics-header {
+  font-size: 20pt;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#statistics-container > .answer-content {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+}
+
+#statistics-container > .answer-content > .survey-question-title {
+  margin-bottom: 16px;
+}
